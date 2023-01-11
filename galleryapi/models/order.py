@@ -4,7 +4,7 @@ from .user import User
 from .payment_type import PaymentType
 class Order(models.Model):
     '''Order Class'''
-    customer_id = models.ForeignKey(User, on_delete=models.PROTECT)
+    customer_id = models.ForeignKey(User, on_delete=models.CASCADE)
     payment_type_id = models.ForeignKey(PaymentType, on_delete=models.PROTECT)
     total_cost = models.DecimalField(max_digits=8, decimal_places=2)
     is_closed = models.BooleanField()

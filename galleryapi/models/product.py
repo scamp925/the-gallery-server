@@ -10,9 +10,9 @@ class Product(models.Model):
     image_url = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     quantity = models.IntegerField()
-    seller_id = models.ForeignKey(User, on_delete=models.PROTECT)
+    seller_id = models.ForeignKey(User, on_delete=models.CASCADE)
 
 @property
 def price_display(self):
     '''Custom property to add the dollar sign ($) to the price amount'''
-    return "$%s" % self.price
+    return '$%s' % self.price
