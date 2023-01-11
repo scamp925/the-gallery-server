@@ -7,7 +7,7 @@ class User(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     username = models.CharField(max_length=100)
-    password = models
+    password = models.CharField(max_length=50)
     created_on = models.DateField()
     is_seller = models.BooleanField()
     uid = models.CharField(max_length=100)
