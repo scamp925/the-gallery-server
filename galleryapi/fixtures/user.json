@@ -1,0 +1,67 @@
+[
+  {
+    "model": "galleryapi.user",
+    "pk": 1,
+    "fields": {
+        "first_name": "Carolina",
+        "last_name": "Giraldo",
+        "username": "Karol_G",
+        "password": "provenza",
+        "created_on": "2023-01-10",
+        "is_seller": true,
+        "uid": "1"
+    }
+  },
+  {
+    "model": "galleryapi.user",
+    "pk": 2,
+    "fields": {
+        "first_name": "Benito Antonio",
+        "last_name": "Martínez Ocasio",
+        "username": "Bad_Bunny",
+        "password": "BulletTrain",
+        "created_on": "2023-01-15",
+        "is_seller": true,
+        "uid": "2"
+    }
+  },
+  {
+    "model": "galleryapi.user",
+    "pk": 3,
+    "fields": {
+        "first_name": "Garth",
+        "last_name": "Bayley",
+        "username": "Garth_Bayley",
+        "password": "LiveThruArt",
+        "created_on": "2023-01-01",
+        "is_seller": true,
+        "uid": "3"
+    }
+  },
+  {
+    "model": "galleryapi.user",
+    "pk": 4,
+    "fields": {
+        "first_name": "Anna",
+        "last_name": "Matykiewicz",
+        "username": "A_Maty",
+        "password": "LoveThruArt",
+        "created_on": "2023-01-02",
+        "is_seller": true,
+        "uid": "4"
+    }
+  },
+  {
+    "model": "galleryapi.user",
+    "pk": 5,
+    "fields": {
+        "first_name": "Graham",
+        "last_name": "Dean",
+        "username": "Graham_Dean",
+        "password": "SeeThruArt",
+        "created_on": "2023-01-11",
+        "is_seller": true,
+        "uid": "5"
+    }
+  }
+]
