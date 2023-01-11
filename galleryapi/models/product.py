@@ -11,6 +11,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     quantity = models.IntegerField()
     seller_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    '''Line 13: When user is deleted, all associated products will also be deleted'''
 
 @property
 def price_display(self):
