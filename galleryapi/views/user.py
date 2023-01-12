@@ -12,6 +12,17 @@ class UserView(ViewSet):
         serializer = UserSerializer(user)
         
         return Response(serializer.data)
+      
+    def list(self, request):
+        """Handle GET requests to get all users
+
+        Returns:
+            Response -- JSON serialized list of users
+        """
+        
+        users = User.objects.all()
+        serializer = UserSerializer(users, many=True)
+        return Response(serializer.data)
        
 class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for users"""
