@@ -1,0 +1,29 @@
+[
+  {
+    "model": "galleryapi.paymenttype",
+    "pk": 1,
+    "fields": {
+        "label": "Debit Card",
+        "account_number": "15846754826",
+        "customer": 2
+    }
+  },
+  {
+    "model": "galleryapi.paymenttype",
+    "pk": 2,
+    "fields": {
+        "label": "Credit Card",
+        "account_number": "45816749645",
+        "customer": 1
+    }
+  },
+  {
+    "model": "galleryapi.paymenttype",
+    "pk": 3,
+    "fields": {
+        "label": "PayPal",
+        "account_number": "68794582164",
+        "customer": 1
+    }
+  }
+]
