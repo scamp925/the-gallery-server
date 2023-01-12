@@ -1,0 +1,362 @@
+[
+  {
+    "model": "galleryapi.product",
+    "pk": 1,
+    "fields": {
+        "title": "Winter Mood Painting",
+        "description": "Emotional portrait inspired by human nature Acrylic painting on stretches canvas, ready to hang",
+        "image_url": "https://cdn.singulart.com/artworks/v2/cropped/3619/main/fhd/1755254_802a128b51ade1873163a49f0087d806.jpeg",
+        "price": 1710.00,
+        "quantity": 2,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 2,
+    "fields": {
+        "title": "Alchemy Print",
+        "description": "Surrealistic portrait inspired by alchemy and mysticism Acrylic painting on stretched canvas, ready to hang",
+        "image_url": "https://images.saatchiart.com/saatchi/52548/art/9598003/8661103-TMKCHQTU-32.jpg",
+        "price": 258.00,
+        "quantity": 5,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 3,
+    "fields": {
+        "title": "Natura Print",
+        "description": "Emotional portrait, colours inspired by autumn/winter season Acrylic painting on stretched canvas, ready to hang",
+        "image_url": "https://images.saatchiart.com/saatchi/52548/art/5291747/4361563-HSC00001-32.jpg",
+        "price": 180.00,
+        "quantity": 3,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 4,
+    "fields": {
+        "title": "Night Whispers",
+        "description": "In this piece cat is a symbol of affection and protection. Lady dress shows landscape in abstract way.",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/7FtjNFLffSYqBM_6fVSSEN08gNI=/900x0/product/1/0/aeb24ef644394620a19c6d0df899c21c_opt.jpg",
+        "price": 2037.37,
+        "quantity": 1,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 5,
+    "fields": {
+        "title": "Resilient",
+        "description": "Emotional portrait inspired by strength of human nature, and ability to recover, style inspired by iconography. Acrylics, gold leaf on stretched canvas, ready to hang.",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/AOuZJCt9ed7bpMjII81TNTU2iXA=/900x0/product/8/b/34a89880a41748bbb66b6cfb3b22021c_opt.jpg",
+        "price": 1608.45,
+        "quantity": 2,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 6,
+    "fields": {
+        "title": "Shifting",
+        "description": "Emotional, intuitive portrait, inspired by human condition",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/FeqOCFwNw2hvfqc0prsx1aaEiZI=/900x0/product/9/3/86b201b7ad794a29b629723fed57c138_opt.jpg",
+        "price": 1608.45,
+        "quantity": 3,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 7,
+    "fields": {
+        "title": "Goodbyes",
+        "description": "It happen that we loose, someone or something what we are really attached to. This piece is about about feeling of loss . There is time to grief so then we are able to move on.",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/ghIED39Yja0R-QEtj_nk4q3rThs=/900x0/product/b/2/f15c280f668447258c80a57320b81da7_opt.jpg",
+        "price": 1608.45,
+        "quantity": 2,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 8,
+    "fields": {
+        "title": "Fulfilment's",
+        "description": "Emotional, intuitive portrait, inspired by human condition",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/VSlNJaAjKgnT2xe50sPj6AUMprs=/900x0/product/9/3/569d8e6c0db44ecbb72dbdad28c6a241_opt.jpg",
+        "price": 3324.13,
+        "quantity": 1,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 9,
+    "fields": {
+        "title": "Dreamy",
+        "description": "Emotional portrait, dreamy and distance face expression",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/UFVze266HY9qQ6F4_0H4LZajMII=/900x0/product/8/7/75b84c14fbce4a57a2dc5a2207dc2f9f_opt.jpg",
+        "price": 1393.99,
+        "quantity": 3,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 10,
+    "fields": {
+        "title": "Harvest Time",
+        "description": "This piece inspired by all spectrum of colour during season change from summer to autumn, with nostalgic look in her eyes, as days are getting shorter and it's time when everything is slowing down.",
+        "image_url": "https://d3rf6j5nx5r04a.cloudfront.net/ZeWDr9g_hrlmsTm_BXe1pqmColM=/900x0/product/a/f/2621716dcf64412895873b5dc74817bb_opt.jpg",
+        "price": 4074.74,
+        "quantity": 1,
+        "seller_id": 4
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 11,
+    "fields": {
+        "title": "Ballet Dancers in Red - Ballet Painting",
+        "description": "Ballet is created on beautiful lines and shapes. If what you hear and what you see mesh, there's a very thrilling experience.    ",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/fullsizeoutput_10c7_530x@2x.jpeg?v=1552036873",
+        "price": 2100.00,
+        "quantity": 5,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 12,
+    "fields": {
+        "title": "Ripping up the Ice - Ice Skating Painting",
+        "description": "Dancing on ice has always been a favourite to watch with professional skaters swirling, spinning and jumping in a blur of colour making you wish you where that agile again. With the Winter Olympics this is all making it exciting again.",
+        "image_url": "http://cdn.shopify.com/s/files/1/1993/1937/products/IMG_3696_1024x1024.jpg?v=1644416372",
+        "price": 1380.00,
+        "quantity": 2,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 13,
+    "fields": {
+        "title": "Tour de France Femmes Touched - Cycling Painting",
+        "description": "When you put out a hand to connect with the fans. Marianne Vos (Jumbo-Visma) won stage six of the race, from Saint-Die-Des-Vosges to Rosheim",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/IMG_2173_530x@2x.jpg?v=1659452305",
+        "price": 186.00,
+        "quantity": 6,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 14,
+    "fields": {
+        "title": "Trusting Him - Trapeze Painting",
+        "description": "This is loosely based on an image of trapeze artists. I feel the speed of the swing going through the air and the trust needed to perform these acts. You under the spotlight in the big top and you can afford to make a mistake. Its all smoke and mirrors in the depiction of the background.",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/IMG_0189_1024x1024@2x.jpg?v=1632386027",
+        "price": 2037.37,
+        "quantity": 1,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 15,
+    "fields": {
+        "title": "Whitby Harbour - Seascape Painting",
+        "description": "Looking over the harbour from the cliffs. A fleeting impression",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/IMG_3864_1024x1024@2x.jpg?v=1634633929",
+        "price": 310.00,
+        "quantity": 9,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 16,
+    "fields": {
+        "title": "London Blue River - Cityscape Painting",
+        "description": "A view of London along the Thames showing Tour bridge, Town hall and Shard. On a clear day this an iconic view catching the reflections of an ever changing city.",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/IMG_0790_1024x1024@2x.jpg?v=1643968382",
+        "price": 310.00,
+        "quantity": 10,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 17,
+    "fields": {
+        "title": "Beach walkers - Seascape",
+        "description": " I love walking on beaches when the weather is not at its prime. Put on a big coat and enjoy the wind, big skies and prancing waves. Filey beach",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/3EB70FFE-DB08-4A8E-9392-33A720AC5717_1_201_a_1024x1024@2x.jpg?v=1609843512",
+        "price": 186.00,
+        "quantity": 5,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 18,
+    "fields": {
+        "title": "Flower Girls - Cow Painting",
+        "description": "Friends are often the inspiration for my paintings. A good friend sent me an image from her travels as she knows I love painting cows. I really loved the movement in the legs and the quirky nature of the subject matter. I can just see the big old mother being stern and grumpy while the younger ones in orange and pick are far more frivolous.",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/fullsizeoutput_1212_1024x1024@2x.jpeg?v=1552037103",
+        "price": 1860.00,
+        "quantity": 3,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 19,
+    "fields": {
+        "title": "Mother and calf",
+        "description": "Pen and ink drawing of a cow with her calf. I have kept the palette monotone with sepia and black inks. This is something a come across often when out walking and beware a mother protecting her off spring .",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/fullsizeoutput_159c_1024x1024@2x.jpeg?v=1552037225",
+        "price": 191.00,
+        "quantity": 8,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 20,
+    "fields": {
+        "title": "I walked London until the cows came home - Cow Painting",
+        "description": "When I go to London I tend to walk for miles. I love just absorbing the cities energy. After reading 'Jeff in Venice, Death in Varanasi' by Geoff Dyer I thought of painting cows in the middle of London. Can you imagine the chaos of cattle on the streets?",
+        "image_url": "https://cdn.shopify.com/s/files/1/1993/1937/products/I_walked_london_till_the_cows_came_home_1024x1024@2x.jpg?v=1552037135",
+        "price": 496.00,
+        "quantity": 4,
+        "seller_id": 3
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 21,
+    "fields": {
+        "title": "Sip",
+        "description": "An abstracted human figure sips from their hand; the figure is shaded with a blend of dark and light oranges giving them a corroded metal appearance.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/sip-1999,1048642.jpg",
+        "price": 1876.00,
+        "quantity": 2,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 22,
+    "fields": {
+        "title": "White Noise",
+        "description": "Watercolor on handmade Indian rag paper.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/white-noise-2007,2361141.jpg",
+        "price": 675.00,
+        "quantity": 7,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 23,
+    "fields": {
+        "title": "Back",
+        "description": "Contemporary watercolor painting of a male nude seated grabbing his knees.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/back,2360101.jpg",
+        "price": 1268.00,
+        "quantity": 2,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 24,
+    "fields": {
+        "title": "Ghost Ship Four",
+        "description": "Contemporary painting of the figure of a boat approaching a tree.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/ghost-ship-four-2012,2362012.jpg",
+        "price": 580.00,
+        "quantity": 11,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 25,
+    "fields": {
+        "title": "Shelter",
+        "description": "Protected by love.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/shelter-2018,2613147.jpg",
+        "price": 1878.00,
+        "quantity": 2,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 26,
+    "fields": {
+        "title": "Diver II",
+        "description": "Contemporary watercolor painting of a swimming from a profile diving into the water.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/diver-ii,2360417.jpg",
+        "price": 198.00,
+        "quantity": 6,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 27,
+    "fields": {
+        "title": "Dark Leaves",
+        "description": "Be restful in nature",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/dark-leaves-2021,2875165.jpg",
+        "price": 2587.00,
+        "quantity": 2,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 28,
+    "fields": {
+        "title": "Intrusion",
+        "description": "Touched",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/intrusion,2427640.jpg",
+        "price": 258.00,
+        "quantity": 1,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 29,
+    "fields": {
+        "title": "White Tree",
+        "description": "Watercolor on paper",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/white-tree-2006,2361144.jpg",
+        "price": 1485.00,
+        "quantity": 4,
+        "seller_id": 5
+    }
+  },
+  {
+    "model": "galleryapi.product",
+    "pk": 30,
+    "fields": {
+        "title": "Haven",
+        "description": "Breathe and rest.",
+        "image_url": "https://static.greatbigcanvas.com/images/print_rolled_posterpaper/bridgeman-art-library/haven,2770040.jpg",
+        "price": 2587.00,
+        "quantity": 3,
+        "seller_id": 5
+    }
+  }
+]

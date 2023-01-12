@@ -1,0 +1,26 @@
+[
+  {
+    "model": "galleryapi.productonorder",
+    "pk": 1,
+    "fields": {
+        "product": 8,
+        "order": 2
+    }
+  },
+  {
+    "model": "galleryapi.productonorder",
+    "pk": 2,
+    "fields": {
+        "product": 15,
+        "order": 2
+    }
+  },
+  {
+    "model": "galleryapi.productonorder",
+    "pk": 3,
+    "fields": {
+        "product": 25,
+        "order": 1
+    }
+  }
+]

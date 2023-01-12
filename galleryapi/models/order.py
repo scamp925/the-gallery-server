@@ -6,9 +6,9 @@ class Order(models.Model):
     '''Order Class'''
     total_cost = models.DecimalField(max_digits=8, decimal_places=2)
     is_closed = models.BooleanField()
-    customer_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    customer = models.ForeignKey(User, on_delete=models.CASCADE)
     '''Line 9: When user is deleted, all associated orders will also be deleted'''
-    payment_type_id = models.ForeignKey(PaymentType, on_delete=models.PROTECT)
+    payment_type = models.ForeignKey(PaymentType, on_delete=models.PROTECT)
     '''Line 11: When a payment type is trying to be deleted, a protect error will be triggered; thus, not allowing for the payment type to be deleted because the payment type is associated with an order. Payment type can be deleted after all associated orders are deleted first.'''
 
 @property
