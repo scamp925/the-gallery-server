@@ -34,6 +34,11 @@ class OrderView(ViewSet):
                 except:
                     pass
                 
+                # Still in the loop, finding the seller of the product for each product on an order 
+                seller_info = User.objects.get(id=products_on_order.seller.id)
+                associated_products.append(seller_info.first_name)
+                associated_products.append(seller_info.last_name)
+            
             order.associated_products = associated_products
             
         serializer = OrderSerializer(orders, many=True)
