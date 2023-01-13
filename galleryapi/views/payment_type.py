@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework import serializers, status
-from galleryapi.models import PaymentType
+from galleryapi.models import PaymentType, User
 
 class PaymentTypeView(ViewSet):
     '''The Gallery's Payment Type View'''
@@ -36,6 +36,23 @@ class PaymentTypeView(ViewSet):
             
         serializer = PaymentTypeSerializer(payment_types, many=True)
         
+        return Response(serializer.data)
+    
+    def create(self, request):
+        """Handle POST operations
+
+        Returns
+            Response -- JSON serialized payment type instance
+        """
+        customer = User.objects.get(uid=request.data['customer_id'])
+        
+        payment_type = PaymentType.objects.create(
+            label=request.data['label'],
+            account_number=request.data['account_number'],
+            customer=customer
+        )
+        
+        serializer = PaymentTypeSerializer(payment_type)
         return Response(serializer.data)
         
 class PaymentTypeSerializer(serializers.ModelSerializer):
