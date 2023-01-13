@@ -35,6 +35,11 @@ class ProductOnOrderView(ViewSet):
         serializer = ProductOnOrderSerializer(product_on_order)
         return Response(serializer.data)
 
+    def destroy(self, request, pk):
+        products = ProductOnOrder.objects.get(pk=pk)
+        products.delete()
+        
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 class ProductOnOrderSerializer(serializers.ModelSerializer):
     """JSON serializer for products on order"""
     class Meta:
