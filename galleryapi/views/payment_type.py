@@ -28,6 +28,11 @@ class PaymentTypeView(ViewSet):
             Response -- JSON serialized list of payment types
         """
         payment_types = PaymentType.objects.all()
+        
+        # endpoint: {{dbUrl}}/paymenttypes?user=1 => shows all associated payment types of a single user
+        payment_types_of_user = request.query_params.get('user', None)
+        if payment_types_of_user is not None:
+            payment_types = payment_types.filter(customer_id=payment_types_of_user)
             
         serializer = PaymentTypeSerializer(payment_types, many=True)
         
