@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from galleryapi.views import register_user, check_user, UserView, ProductView
+from galleryapi.views import register_user, check_user, UserView, ProductView, PaymentTypeView
 from django.conf.urls import include
 from rest_framework import routers
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UserView, 'user')
 router.register(r'products', ProductView, 'product')
+router.register(r'paymenttypes', PaymentTypeView, 'paymenttype')
 
 urlpatterns = [
     path('register', register_user),
