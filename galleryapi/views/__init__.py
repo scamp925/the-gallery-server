@@ -3,3 +3,4 @@ from .user import UserView
 from .product import ProductView
 from .payment_type import PaymentTypeView
 from .order import OrderView
+from .product_on_order import ProductOnOrderView

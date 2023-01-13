@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from galleryapi.views import register_user, check_user, UserView, ProductView, PaymentTypeView, OrderView
+from galleryapi.views import register_user, check_user, UserView, ProductView, PaymentTypeView, OrderView, ProductOnOrderView
 from django.conf.urls import include
 from rest_framework import routers
 
@@ -24,6 +24,7 @@ router.register(r'users', UserView, 'user')
 router.register(r'products', ProductView, 'product')
 router.register(r'paymenttypes', PaymentTypeView, 'paymenttype')
 router.register(r'orders', OrderView, 'order')
+router.register(r'productonorders', ProductOnOrderView, 'productonorder')
 
 urlpatterns = [
     path('register', register_user),
