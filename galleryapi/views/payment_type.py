@@ -6,7 +6,7 @@ from rest_framework import serializers, status
 from galleryapi.models import PaymentType, User
 
 class PaymentTypeView(ViewSet):
-    '''The Gallery's Payment Type View'''
+    '''The Gallery's payment type view'''
     
     def retrieve(self, request, pk):
         """Handle GET requests from single payment type
