@@ -7,6 +7,17 @@ from galleryapi.models import ProductOnOrder, Product, Order
 
 class ProductOnOrderView(ViewSet):
     """The Gallery's product on order view"""
+    def list(self, request):
+        """Handle GET requests to get all events
+
+        Returns:
+            Response -- JSON serialized list of events
+        """
+        products_on_order = ProductOnOrder.objects.all()
+    
+        serializer = ProductOnOrderSerializer(products_on_order, many=True)
+        return Response(serializer.data)
+    
     def create(self, request):
         """Handle POST operations
 
@@ -16,7 +27,6 @@ class ProductOnOrderView(ViewSet):
         product = Product.objects.get(pk=request.data['product_id'])
         # try:
         order = Order.objects.get(pk=request.data['order_id'])
-        print(order, "What is this?")
         # except Order.DoesNotExist:
         #     order = None
         
@@ -30,6 +40,7 @@ class ProductOnOrderView(ViewSet):
 
 class ProductOnOrderSerializer(serializers.ModelSerializer):
     """JSON serializer for products on order"""
-    model = ProductOnOrder
-    fields = ('id', 'product', 'order')
-    depth = 2
+    class Meta:
+        model = ProductOnOrder
+        fields = ('id', 'product', 'order')
+        depth = 2
