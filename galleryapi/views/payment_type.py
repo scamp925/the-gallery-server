@@ -54,6 +54,21 @@ class PaymentTypeView(ViewSet):
         
         serializer = PaymentTypeSerializer(payment_type)
         return Response(serializer.data)
+      
+    def update(self, request, pk):
+        """Handle PUT requests for a payment type
+
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        
+        payment_type = PaymentType.objects.get(pk=pk)
+        payment_type.label = request.data['label']
+        payment_type.account_number = request.data['account_number']
+        
+        payment_type.save()
+        
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
         
 class PaymentTypeSerializer(serializers.ModelSerializer):
     '''JSON serializer for payment types'''
