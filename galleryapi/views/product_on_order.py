@@ -25,10 +25,7 @@ class ProductOnOrderView(ViewSet):
             Response -- JSON serialized product on order instance
         """
         product = Product.objects.get(pk=request.data['product_id'])
-        # try:
         order = Order.objects.get(pk=request.data['order_id'])
-        # except Order.DoesNotExist:
-        #     order = None
         
         product_on_order = ProductOnOrder.objects.create(
             product=product,
