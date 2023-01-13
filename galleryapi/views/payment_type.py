@@ -69,6 +69,12 @@ class PaymentTypeView(ViewSet):
         payment_type.save()
         
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        payment_type = PaymentType.objects.get(pk=pk)
+        payment_type.delete()
+        
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
         
 class PaymentTypeSerializer(serializers.ModelSerializer):
     '''JSON serializer for payment types'''
