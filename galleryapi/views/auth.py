@@ -42,7 +42,7 @@ def register_user(request):
         first_name=request.data['first_name'],
         last_name=request.data['last_name'],
         username=request.data['username'],
-        password=request.data['password'],
+        profile_image_url=request.data['profile_image_url'],
         created_on=request.data['created_on'],
         is_seller=False,
         uid=request.data['uid']
