@@ -64,6 +64,14 @@ class OrderView(ViewSet):
             payment_type=payment_type
         )
         
+        associated_product_ids = request.data['associated_product_ids']
+        
+        products = [Product.objects.get(pk=product_id) for product_id in associated_product_ids]
+        
+        for product in products:
+            product_on_order = ProductOnOrder(product=product, order=order)
+            product_on_order.save()
+            
         serializer = OrderSerializer(order)
         return Response(serializer.data)
       
