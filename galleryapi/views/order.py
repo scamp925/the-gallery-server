@@ -17,9 +17,16 @@ class OrderView(ViewSet):
         orders = Order.objects.all()
             
         # endpoint: {{dbUrl}}/orders?closed=true => renders all closed orders
+        # endpoint: {{dbUrl}}/orders?closed=false => renders all open orders
         closed_orders = request.query_params.get('closed', None)
         if closed_orders is not None:
-            orders = orders.filter(is_closed=True)
+            if closed_orders == "true":
+            
+                closed_orders = True
+            else:
+                closed_orders = False
+            
+            orders = orders.filter(is_closed=closed_orders)
         
         # Response -- A list of all products associated with a specific order
         for order in orders:
