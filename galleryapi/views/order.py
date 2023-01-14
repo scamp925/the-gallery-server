@@ -15,10 +15,6 @@ class OrderView(ViewSet):
             Response -- JSON serialized list of orders
         """
         orders = Order.objects.all()
-        
-        logged_in_user_orders = request.query_params.get('user', None)
-        if logged_in_user_orders is not None:
-            orders = orders.filter(customer_id=logged_in_user_orders)
             
         # endpoint: {{dbUrl}}/orders?closed=true => renders all closed orders
         closed_orders = request.query_params.get('closed', None)
