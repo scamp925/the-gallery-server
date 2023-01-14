@@ -6,7 +6,7 @@
         "first_name": "Carolina",
         "last_name": "Giraldo",
         "username": "Karol_G",
-        "password": "provenza",
+        "profile_image_url": "https://media.allure.com/photos/62ed31b2e109c9f860c59498/1:1/w_2000,h_2000,c_limit/karol%20g%20red%20hair.jpg",
         "created_on": "2023-01-10",
         "is_seller": true,
         "uid": "1"
@@ -19,7 +19,7 @@
         "first_name": "Benito Antonio",
         "last_name": "Martínez Ocasio",
         "username": "Bad_Bunny",
-        "password": "BulletTrain",
+        "profile_image_url": "https://images.squarespace-cdn.com/content/v1/591b5715725e257ade2cc691/1628621930018-6P5FC55O941O6ZRNECOY/bb.jpg?format=1000w",
         "created_on": "2023-01-15",
         "is_seller": true,
         "uid": "2"
@@ -32,7 +32,7 @@
         "first_name": "Garth",
         "last_name": "Bayley",
         "username": "Garth_Bayley",
-        "password": "LiveThruArt",
+        "profile_image_url": "https://d38we5ntdyxyje.cloudfront.net/92538/profile/EJIOGVSD_avatar_medium_square.jpg",
         "created_on": "2023-01-01",
         "is_seller": true,
         "uid": "3"
@@ -45,7 +45,7 @@
         "first_name": "Anna",
         "last_name": "Matykiewicz",
         "username": "A_Maty",
-        "password": "LoveThruArt",
+        "profile_image_url": "https://cdn.singulart.com/artists/v2/pictures/cropped/artwork/base/3619_artwork_8ae0dc52c49eaf93af215bbedc6a3d63.jpeg",
         "created_on": "2023-01-02",
         "is_seller": true,
         "uid": "4"
@@ -58,7 +58,7 @@
         "first_name": "Graham",
         "last_name": "Dean",
         "username": "Graham_Dean",
-        "password": "SeeThruArt",
+        "profile_image_url": "https://zoneonearts.com.au/wp-content/uploads/2015/03/graham-dean.jpg",
         "created_on": "2023-01-11",
         "is_seller": true,
         "uid": "5"

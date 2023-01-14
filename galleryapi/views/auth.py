@@ -20,7 +20,8 @@ def check_user(request):
     # If authentication was successful, respond with their token
         data = {
             'id': user.id,
-            'uid': user.uid
+            'uid': user.uid,
+            'profile_image_url': user.profile_image_url
         }
         return Response(data)
     except:
