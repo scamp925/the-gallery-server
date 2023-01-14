@@ -11,7 +11,10 @@ class Order(models.Model):
     payment_type = models.ForeignKey(PaymentType, on_delete=models.PROTECT)
     '''Line 11: When a payment type is trying to be deleted, a protect error will be triggered; thus, not allowing for the payment type to be deleted because the payment type is associated with an order. Payment type can be deleted after all associated orders are deleted first.'''
 
-@property
-def total_cost_display(self):
-    '''Custom property to add the dollar sign ($) to the total cost amount'''
-    return "$%s" % self.total_cost
+    @property
+    def associated_products(self):
+        return self.__associated_products
+
+    @associated_products.setter
+    def associated_products(self, value):
+        self.__associated_products = value

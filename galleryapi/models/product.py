@@ -12,8 +12,3 @@ class Product(models.Model):
     quantity = models.IntegerField()
     seller = models.ForeignKey(User, on_delete=models.CASCADE)
     '''Line 13: When user is deleted, all associated products will also be deleted'''
-
-@property
-def price_display(self):
-    '''Custom property to add the dollar sign ($) to the price amount'''
-    return '$%s' % self.price
