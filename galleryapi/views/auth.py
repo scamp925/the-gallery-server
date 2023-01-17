@@ -1,6 +1,6 @@
-from galleryapi.models import User
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from galleryapi.models import User
 
 
 @api_view(['POST'])
@@ -21,6 +21,7 @@ def check_user(request):
         data = {
             'id': user.id,
             'uid': user.uid,
+            'username': user.username,
             'profile_image_url': user.profile_image_url
         }
         return Response(data)
@@ -54,6 +55,7 @@ def register_user(request):
             'uid': user.uid,
             'first_name': user.first_name,
             'last_name': user.last_name,
-            'username': user.username
+            'username': user.username,
+            'profile_image_url': user.profile_image_url
     }
     return Response(data)
