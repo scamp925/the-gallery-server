@@ -1,6 +1,6 @@
-from galleryapi.models import User
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from galleryapi.models import User
 
 
 @api_view(['POST'])
@@ -20,7 +20,9 @@ def check_user(request):
     # If authentication was successful, respond with their token
         data = {
             'id': user.id,
-            'uid': user.uid
+            'uid': user.uid,
+            'username': user.username,
+            'profile_image_url': user.profile_image_url
         }
         return Response(data)
     except:
@@ -41,7 +43,7 @@ def register_user(request):
         first_name=request.data['first_name'],
         last_name=request.data['last_name'],
         username=request.data['username'],
-        password=request.data['password'],
+        profile_image_url=request.data['profile_image_url'],
         created_on=request.data['created_on'],
         is_seller=False,
         uid=request.data['uid']
@@ -53,6 +55,7 @@ def register_user(request):
             'uid': user.uid,
             'first_name': user.first_name,
             'last_name': user.last_name,
-            'username': user.username
+            'username': user.username,
+            'profile_image_url': user.profile_image_url
     }
     return Response(data)

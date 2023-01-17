@@ -28,4 +28,4 @@ class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for users"""
     class Meta:
         model = User
-        fields = ('id', 'first_name', 'last_name', 'username', 'password', 'created_on', 'is_seller', 'uid')
+        fields = ('id', 'first_name', 'last_name', 'username', 'profile_image_url', 'created_on', 'is_seller', 'uid')
