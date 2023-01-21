@@ -1,7 +1,6 @@
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from rest_framework.decorators import action
 from rest_framework import serializers, status
 from galleryapi.models import PaymentType, User
 
@@ -44,7 +43,7 @@ class PaymentTypeView(ViewSet):
         Returns
             Response -- JSON serialized payment type instance
         """
-        customer = User.objects.get(uid=request.data['customer_id'])
+        customer = User.objects.get(pk=request.data['customer_id'])
         
         payment_type = PaymentType.objects.create(
             label=request.data['label'],
