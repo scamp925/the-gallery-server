@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework import serializers, status
-from galleryapi.models import Product, ProductOnOrder
+from galleryapi.models import Product, ProductOnOrder, User
 from .order import OrderSerializer
 
 class ProductView(ViewSet):
@@ -35,13 +35,29 @@ class ProductView(ViewSet):
     
     @action(methods=['post'], detail=True)
     def add_to_cart(self, request, pk):
+        """Post request to add user's product to the cart"""
         order = request.data['order_id']
         product = Product.objects.get(pk=pk)
+        user = User.objects.get(pk=request.data['user'])
         ProductOnOrder.objects.create(
             order = order,
-            product = product
+            product = product,
+            user = user
         )
         return Response({'message': 'Product added'}, status=status.HTTP_201_CREATED)
+    
+    @action(methods=['delete'], detail=True)
+    def remove_from_cart(self, request, pk):
+        """Post request to add user's product to the cart"""
+        product = Product.objects.get(pk=pk)
+        user = User.objects.get(pk=request.data['user'])
+        product_on_order = ProductOnOrder.objects.get(
+            product = product,
+            user = user
+        )
+        product_on_order.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
 class ProductSerializer(serializers.ModelSerializer):
     '''JSON serializer for products'''
     class Meta:
