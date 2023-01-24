@@ -14,9 +14,13 @@ class OrderView(ViewSet):
             Response -- JSON serialized list of orders
         """
         orders = Order.objects.all()
+        
+        # endpoint: {{dbUrl}}/orders?user=${customer_id}&closed=true => renders all closed orders
+        # endpoint: {{dbUrl}}/orders?user=${customer_id}&closed=false => renders all open orders
+        user = request.query_params.get('user', None)
+        if user is not None:
+            orders = orders.filter(customer_id=user)
             
-        # endpoint: {{dbUrl}}/orders?closed=true => renders all closed orders
-        # endpoint: {{dbUrl}}/orders?closed=false => renders all open orders
         closed_orders = request.query_params.get('closed', None)
         if closed_orders is not None:
             if closed_orders == "true":
