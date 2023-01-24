@@ -56,7 +56,7 @@ class OrderView(ViewSet):
         Returns
             Response -- JSON serialized order instance
         """
-        customer = User.objects.get(uid=request.data['customer_id'])
+        customer = User.objects.get(pk=request.data['customer_id'])
         payment_type = PaymentType.objects.get(pk=request.data['payment_type_id'])
         
         order = Order.objects.create(
