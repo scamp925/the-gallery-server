@@ -2,8 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from galleryapi.models import Product, ProductOnOrder, User
-from .order import OrderSerializer
+from galleryapi.models import Product
 
 class ProductView(ViewSet):
     '''The Gallery's Product View'''
@@ -32,35 +31,9 @@ class ProductView(ViewSet):
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
     
-    @action(methods=['post'], detail=True)
-    def add_to_cart(self, request, pk):
-        """Post request to add user's product to the cart"""
-        order = request.data['order_id']
-        product = Product.objects.get(pk=pk)
-        user = User.objects.get(pk=request.data['user'])
-        ProductOnOrder.objects.create(
-            order = order,
-            product = product,
-            user = user
-        )
-        return Response({'message': 'Product added'}, status=status.HTTP_201_CREATED)
-    
-    @action(methods=['delete'], detail=True)
-    def remove_from_cart(self, request, pk):
-        """Post request to add user's product to the cart"""
-        product = Product.objects.get(pk=pk)
-        user = User.objects.get(pk=request.data['user'])
-        product_on_order = ProductOnOrder.objects.get(
-            product = product,
-            user = user
-        )
-        product_on_order.delete()
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
-    
 class ProductSerializer(serializers.ModelSerializer):
     '''JSON serializer for products'''
     class Meta:
         model = Product
-        field = OrderSerializer(required=False, allow_null=True)
         fields = ('id', 'title', 'description', 'image_url', 'price', 'quantity', 'seller')
         depth = 1
