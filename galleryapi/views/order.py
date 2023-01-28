@@ -37,18 +37,22 @@ class OrderView(ViewSet):
             associated_products = []
             
             for product_on_order_obj in filtered_products_on_order:
+                # Making a product dictionary to be able to in the frontend get the individual values and display them properly. Will append to associated_products making it an array of objects for the FE
+                product_dict={}
                 try:
                     products_on_order = Product.objects.get(id=product_on_order_obj.product_id)
-                    associated_products.append(products_on_order.title)
-                    associated_products.append(products_on_order.image_url)
+                    product_dict['title']=products_on_order.title
+                    product_dict['image_url']=products_on_order.image_url
                 except:
                     pass
                 
                 # Still in the loop, finding the seller of the product for each product on an order 
                 seller_info = User.objects.get(id=products_on_order.seller.id)
-                associated_products.append(seller_info.first_name)
-                associated_products.append(seller_info.last_name)
+                product_dict['first_name']=seller_info.first_name
+                product_dict['last_name']=seller_info.last_name
             
+                associated_products.append(product_dict)
+                        
             order.associated_products = associated_products
             
         serializer = OrderSerializer(orders, many=True)
