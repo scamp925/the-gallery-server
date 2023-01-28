@@ -41,6 +41,7 @@ class OrderView(ViewSet):
                 product_dict={}
                 try:
                     products_on_order = Product.objects.get(id=product_on_order_obj.product_id)
+                    product_dict['id']=products_on_order.id
                     product_dict['title']=products_on_order.title
                     product_dict['image_url']=products_on_order.image_url
                 except:
